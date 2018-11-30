@@ -1,0 +1,2 @@
+E:\Files\mvgisa\mvgisa\bin\Debug\mvgisa.exe.config
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\mvgisa.exe.config
