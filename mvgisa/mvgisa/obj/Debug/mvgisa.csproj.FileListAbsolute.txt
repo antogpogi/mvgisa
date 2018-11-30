@@ -1,2 +1,9 @@
 E:\Files\mvgisa\mvgisa\bin\Debug\mvgisa.exe.config
 E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\mvgisa.exe.config
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\mvgisa.exe
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\mvgisa.pdb
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.Form1.resources
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.Properties.Resources.resources
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.csproj.GenerateResource.Cache
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.exe
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.pdb

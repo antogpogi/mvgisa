@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Krypton.Components.Suite</id>
+    <version>4.5.9</version>
+    <title>Krypton.Components.Suite</title>
+    <authors>megakraken</authors>
+    <owners>megakraken</owners>
+    <licenseUrl>https://github.com/megakraken/Krypton/blob/dev/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/megakraken/Krypton</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/megakraken/Krypton/dev/Images/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Krypton Suite of .NET WinForms Controls</description>
+    <summary>Krypton Suite of .NET WinForms Controls</summary>
+    <releaseNotes />
+    <copyright>ComponentFactory</copyright>
+    <tags>Krypton ComponentFactory WinForms</tags>
+  </metadata>
+</package>
