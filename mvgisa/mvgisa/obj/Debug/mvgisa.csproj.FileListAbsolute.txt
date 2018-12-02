@@ -2,7 +2,6 @@ E:\Files\mvgisa\mvgisa\bin\Debug\mvgisa.exe.config
 E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\mvgisa.exe.config
 E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\mvgisa.exe
 E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\mvgisa.pdb
-E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.Form1.resources
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.Properties.Resources.resources
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.csproj.GenerateResource.Cache
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.exe
@@ -17,3 +16,6 @@ E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\ComponentFactory.Krypton.Workspace.dll
 E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\System.Data.SQLite.dll
 E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\System.Data.SQLite.pdb
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.csprojResolveAssemblyReference.cache
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.AddForm.resources
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.MainForm.resources
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.PresentationForm.resources
