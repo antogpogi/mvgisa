@@ -7,3 +7,13 @@ E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.Properties.Resources.resources
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.csproj.GenerateResource.Cache
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.exe
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.pdb
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\Bunifu_UI_v1.52.dll
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\ComponentFactory.Krypton.Design.dll
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\ComponentFactory.Krypton.Docking.dll
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\System.Data.SQLite.dll
+E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\System.Data.SQLite.pdb
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.csprojResolveAssemblyReference.cache
