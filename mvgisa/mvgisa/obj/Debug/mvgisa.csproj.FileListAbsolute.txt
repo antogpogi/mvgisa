@@ -19,3 +19,4 @@ E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.csprojResolveAssemblyReference.ca
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.AddForm.resources
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.MainForm.resources
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.PresentationForm.resources
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.ItemsForm.resources
