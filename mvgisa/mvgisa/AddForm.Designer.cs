@@ -37,10 +37,10 @@
             this.btnCancel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.FormPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panelIndictor = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panelCrit = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panelElement = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panelSourceOfEvid = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -49,39 +49,19 @@
             this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonPanel5 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panelElementHead = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel6 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonPanel6 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.AddSOE = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.panelCritHead = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnAddElement = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel7 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonPanel7 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panelIndicatorHead = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonTextBox5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel8 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            ((System.ComponentModel.ISupportInitialize)(this.KRAPanel)).BeginInit();
-            this.KRAPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ActionsPanel1)).BeginInit();
-            this.ActionsPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FormPanel)).BeginInit();
-            this.FormPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
-            this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
-            this.kryptonPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
-            this.kryptonPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
-            this.kryptonPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
-            this.kryptonPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).BeginInit();
-            this.kryptonPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel7)).BeginInit();
-            this.kryptonPanel7.SuspendLayout();
-            this.SuspendLayout();
+            this.btnAddCrti = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+           
             // 
             // lblKRA
             // 
@@ -138,6 +118,7 @@
             this.btnCoreIndi.Size = new System.Drawing.Size(176, 29);
             this.btnCoreIndi.TabIndex = 2;
             this.btnCoreIndi.Values.Text = "Add Core Indicator";
+            this.btnCoreIndi.Click += new System.EventHandler(this.btnCoreIndi_Click);
             // 
             // ActionsPanel1
             // 
@@ -173,60 +154,62 @@
             // FormPanel
             // 
             this.FormPanel.AutoScroll = true;
-            this.FormPanel.Controls.Add(this.kryptonPanel1);
+            this.FormPanel.Controls.Add(this.panelIndictor);
             this.FormPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.FormPanel.Location = new System.Drawing.Point(0, 165);
             this.FormPanel.Name = "FormPanel";
             this.FormPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.FormPanel.Size = new System.Drawing.Size(654, 367);
+            this.FormPanel.Size = new System.Drawing.Size(654, 500);
             this.FormPanel.TabIndex = 4;
             // 
-            // kryptonPanel1
+            // panelIndictor
             // 
-            this.kryptonPanel1.Controls.Add(this.kryptonPanel2);
-            this.kryptonPanel1.Controls.Add(this.kryptonPanel7);
-            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.kryptonPanel1.Size = new System.Drawing.Size(654, 366);
-            this.kryptonPanel1.TabIndex = 5;
+            this.panelIndictor.Controls.Add(this.panelCrit);
+            this.panelIndictor.Controls.Add(this.panelIndicatorHead);
+            this.panelIndictor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelIndictor.Location = new System.Drawing.Point(0, 0);
+            this.panelIndictor.Name = "panelIndictor";
+            this.panelIndictor.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
+            this.panelIndictor.Size = new System.Drawing.Size(654, 366);
+            this.panelIndictor.TabIndex = 5;
             // 
-            // kryptonPanel2
+            // panelCrit
             // 
-            this.kryptonPanel2.Controls.Add(this.kryptonPanel3);
-            this.kryptonPanel2.Controls.Add(this.kryptonPanel6);
-            this.kryptonPanel2.Location = new System.Drawing.Point(0, 100);
-            this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(655, 266);
-            this.kryptonPanel2.TabIndex = 21;
+            this.panelCrit.Controls.Add(this.panelElement);
+            this.panelCrit.Controls.Add(this.panelCritHead);
+            this.panelCrit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCrit.Location = new System.Drawing.Point(0, 100);
+            this.panelCrit.Name = "panelCrit";
+            this.panelCrit.Size = new System.Drawing.Size(654, 266);
+            this.panelCrit.TabIndex = 21;
             // 
-            // kryptonPanel3
+            // panelElement
             // 
-            this.kryptonPanel3.Controls.Add(this.kryptonPanel4);
-            this.kryptonPanel3.Controls.Add(this.kryptonPanel5);
-            this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonPanel3.Location = new System.Drawing.Point(0, 94);
-            this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(655, 172);
-            this.kryptonPanel3.TabIndex = 24;
+            this.panelElement.Controls.Add(this.panelSourceOfEvid);
+            this.panelElement.Controls.Add(this.panelElementHead);
+            this.panelElement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelElement.Location = new System.Drawing.Point(0, 94);
+            this.panelElement.Name = "panelElement";
+            this.panelElement.Size = new System.Drawing.Size(654, 172);
+            this.panelElement.StateNormal.Color1 = System.Drawing.Color.White;
+            this.panelElement.TabIndex = 24;
             // 
-            // kryptonPanel4
+            // panelSourceOfEvid
             // 
-            this.kryptonPanel4.Controls.Add(this.kryptonButton1);
-            this.kryptonPanel4.Controls.Add(this.kryptonLabel1);
-            this.kryptonPanel4.Controls.Add(this.kryptonLabel2);
-            this.kryptonPanel4.Controls.Add(this.kryptonTextBox1);
-            this.kryptonPanel4.Controls.Add(this.kryptonLabel3);
-            this.kryptonPanel4.Controls.Add(this.kryptonTextBox2);
-            this.kryptonPanel4.Controls.Add(this.kryptonLabel4);
-            this.kryptonPanel4.Controls.Add(this.kryptonLabel5);
-            this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonPanel4.Location = new System.Drawing.Point(0, 84);
-            this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(655, 88);
-            this.kryptonPanel4.StateNormal.Color1 = System.Drawing.Color.WhiteSmoke;
-            this.kryptonPanel4.TabIndex = 25;
+            this.panelSourceOfEvid.Controls.Add(this.kryptonButton1);
+            this.panelSourceOfEvid.Controls.Add(this.kryptonLabel1);
+            this.panelSourceOfEvid.Controls.Add(this.kryptonLabel2);
+            this.panelSourceOfEvid.Controls.Add(this.kryptonTextBox1);
+            this.panelSourceOfEvid.Controls.Add(this.kryptonLabel3);
+            this.panelSourceOfEvid.Controls.Add(this.kryptonTextBox2);
+            this.panelSourceOfEvid.Controls.Add(this.kryptonLabel4);
+            this.panelSourceOfEvid.Controls.Add(this.kryptonLabel5);
+            this.panelSourceOfEvid.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSourceOfEvid.Location = new System.Drawing.Point(0, 84);
+            this.panelSourceOfEvid.Name = "panelSourceOfEvid";
+            this.panelSourceOfEvid.Size = new System.Drawing.Size(654, 88);
+            this.panelSourceOfEvid.StateNormal.Color1 = System.Drawing.Color.WhiteSmoke;
+            this.panelSourceOfEvid.TabIndex = 25;
             // 
             // kryptonButton1
             // 
@@ -299,17 +282,17 @@
             this.kryptonLabel5.TabIndex = 10;
             this.kryptonLabel5.Values.Text = "Source of Evidence";
             // 
-            // kryptonPanel5
+            // panelElementHead
             // 
-            this.kryptonPanel5.Controls.Add(this.kryptonTextBox3);
-            this.kryptonPanel5.Controls.Add(this.kryptonLabel6);
-            this.kryptonPanel5.Controls.Add(this.kryptonButton2);
-            this.kryptonPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonPanel5.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel5.Name = "kryptonPanel5";
-            this.kryptonPanel5.Size = new System.Drawing.Size(655, 84);
-            this.kryptonPanel5.StateNormal.Color1 = System.Drawing.Color.WhiteSmoke;
-            this.kryptonPanel5.TabIndex = 24;
+            this.panelElementHead.Controls.Add(this.kryptonTextBox3);
+            this.panelElementHead.Controls.Add(this.kryptonLabel6);
+            this.panelElementHead.Controls.Add(this.AddSOE);
+            this.panelElementHead.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelElementHead.Location = new System.Drawing.Point(0, 0);
+            this.panelElementHead.Name = "panelElementHead";
+            this.panelElementHead.Size = new System.Drawing.Size(654, 84);
+            this.panelElementHead.StateNormal.Color1 = System.Drawing.Color.WhiteSmoke;
+            this.panelElementHead.TabIndex = 24;
             // 
             // kryptonTextBox3
             // 
@@ -329,25 +312,26 @@
             this.kryptonLabel6.TabIndex = 8;
             this.kryptonLabel6.Values.Text = "Element";
             // 
-            // kryptonButton2
+            // AddSOE
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(39, 46);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(226, 29);
-            this.kryptonButton2.TabIndex = 12;
-            this.kryptonButton2.Values.Text = "Add Source of Evidence";
+            this.AddSOE.Location = new System.Drawing.Point(33, 46);
+            this.AddSOE.Name = "AddSOE";
+            this.AddSOE.Size = new System.Drawing.Size(226, 29);
+            this.AddSOE.TabIndex = 12;
+            this.AddSOE.Values.Text = "Add Source of Evidence";
+            this.AddSOE.Click += new System.EventHandler(this.AddSOE_Click);
             // 
-            // kryptonPanel6
+            // panelCritHead
             // 
-            this.kryptonPanel6.Controls.Add(this.kryptonTextBox4);
-            this.kryptonPanel6.Controls.Add(this.kryptonButton3);
-            this.kryptonPanel6.Controls.Add(this.kryptonLabel7);
-            this.kryptonPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonPanel6.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel6.Name = "kryptonPanel6";
-            this.kryptonPanel6.Size = new System.Drawing.Size(655, 94);
-            this.kryptonPanel6.StateNormal.Color1 = System.Drawing.Color.WhiteSmoke;
-            this.kryptonPanel6.TabIndex = 19;
+            this.panelCritHead.Controls.Add(this.kryptonTextBox4);
+            this.panelCritHead.Controls.Add(this.btnAddElement);
+            this.panelCritHead.Controls.Add(this.kryptonLabel7);
+            this.panelCritHead.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCritHead.Location = new System.Drawing.Point(0, 0);
+            this.panelCritHead.Name = "panelCritHead";
+            this.panelCritHead.Size = new System.Drawing.Size(654, 94);
+            this.panelCritHead.StateNormal.Color1 = System.Drawing.Color.WhiteSmoke;
+            this.panelCritHead.TabIndex = 19;
             // 
             // kryptonTextBox4
             // 
@@ -358,13 +342,14 @@
             this.kryptonTextBox4.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox4.TabIndex = 6;
             // 
-            // kryptonButton3
+            // btnAddElement
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(39, 50);
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.Size = new System.Drawing.Size(142, 29);
-            this.kryptonButton3.TabIndex = 7;
-            this.kryptonButton3.Values.Text = "Add Element";
+            this.btnAddElement.Location = new System.Drawing.Point(39, 50);
+            this.btnAddElement.Name = "btnAddElement";
+            this.btnAddElement.Size = new System.Drawing.Size(142, 29);
+            this.btnAddElement.TabIndex = 7;
+            this.btnAddElement.Values.Text = "Add Element";
+            this.btnAddElement.Click += new System.EventHandler(this.btnAddElement_Click);
             // 
             // kryptonLabel7
             // 
@@ -375,19 +360,19 @@
             this.kryptonLabel7.TabIndex = 5;
             this.kryptonLabel7.Values.Text = "Criteria";
             // 
-            // kryptonPanel7
+            // panelIndicatorHead
             // 
-            this.kryptonPanel7.Controls.Add(this.kryptonTextBox5);
-            this.kryptonPanel7.Controls.Add(this.kryptonLabel8);
-            this.kryptonPanel7.Controls.Add(this.kryptonButton4);
-            this.kryptonPanel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonPanel7.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel7.Name = "kryptonPanel7";
-            this.kryptonPanel7.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridHeaderRowList;
-            this.kryptonPanel7.Size = new System.Drawing.Size(654, 100);
-            this.kryptonPanel7.StateNormal.Color1 = System.Drawing.Color.ForestGreen;
-            this.kryptonPanel7.StateNormal.Color2 = System.Drawing.Color.DarkGreen;
-            this.kryptonPanel7.TabIndex = 19;
+            this.panelIndicatorHead.Controls.Add(this.kryptonTextBox5);
+            this.panelIndicatorHead.Controls.Add(this.kryptonLabel8);
+            this.panelIndicatorHead.Controls.Add(this.btnAddCrti);
+            this.panelIndicatorHead.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelIndicatorHead.Location = new System.Drawing.Point(0, 0);
+            this.panelIndicatorHead.Name = "panelIndicatorHead";
+            this.panelIndicatorHead.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridHeaderRowList;
+            this.panelIndicatorHead.Size = new System.Drawing.Size(654, 100);
+            this.panelIndicatorHead.StateNormal.Color1 = System.Drawing.Color.ForestGreen;
+            this.panelIndicatorHead.StateNormal.Color2 = System.Drawing.Color.DarkGreen;
+            this.panelIndicatorHead.TabIndex = 19;
             // 
             // kryptonTextBox5
             // 
@@ -408,13 +393,14 @@
             this.kryptonLabel8.TabIndex = 0;
             this.kryptonLabel8.Values.Text = "Indicator Type";
             // 
-            // kryptonButton4
+            // btnAddCrti
             // 
-            this.kryptonButton4.Location = new System.Drawing.Point(36, 55);
-            this.kryptonButton4.Name = "kryptonButton4";
-            this.kryptonButton4.Size = new System.Drawing.Size(142, 29);
-            this.kryptonButton4.TabIndex = 4;
-            this.kryptonButton4.Values.Text = "Add Criteria";
+            this.btnAddCrti.Location = new System.Drawing.Point(36, 55);
+            this.btnAddCrti.Name = "btnAddCrti";
+            this.btnAddCrti.Size = new System.Drawing.Size(142, 29);
+            this.btnAddCrti.TabIndex = 4;
+            this.btnAddCrti.Values.Text = "Add Criteria";
+            this.btnAddCrti.Click += new System.EventHandler(this.btnAddCrti_Click);
             // 
             // AddForm
             // 
@@ -437,24 +423,24 @@
             this.ActionsPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.FormPanel)).EndInit();
             this.FormPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
-            this.kryptonPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
-            this.kryptonPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
-            this.kryptonPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
-            this.kryptonPanel4.ResumeLayout(false);
-            this.kryptonPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
-            this.kryptonPanel5.ResumeLayout(false);
-            this.kryptonPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).EndInit();
-            this.kryptonPanel6.ResumeLayout(false);
-            this.kryptonPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel7)).EndInit();
-            this.kryptonPanel7.ResumeLayout(false);
-            this.kryptonPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelIndictor)).EndInit();
+            this.panelIndictor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelCrit)).EndInit();
+            this.panelCrit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelElement)).EndInit();
+            this.panelElement.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelSourceOfEvid)).EndInit();
+            this.panelSourceOfEvid.ResumeLayout(false);
+            this.panelSourceOfEvid.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelElementHead)).EndInit();
+            this.panelElementHead.ResumeLayout(false);
+            this.panelElementHead.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelCritHead)).EndInit();
+            this.panelCritHead.ResumeLayout(false);
+            this.panelCritHead.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelIndicatorHead)).EndInit();
+            this.panelIndicatorHead.ResumeLayout(false);
+            this.panelIndicatorHead.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -470,10 +456,10 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel FormPanel;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnIndi;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnCoreIndi;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel3;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel4;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel panelIndictor;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel panelCrit;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel panelElement;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel panelSourceOfEvid;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
@@ -482,17 +468,17 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel5;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel panelElementHead;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel6;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel6;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton AddSOE;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel panelCritHead;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnAddElement;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel7;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel7;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel panelIndicatorHead;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel8;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton4;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnAddCrti;
     }
 }

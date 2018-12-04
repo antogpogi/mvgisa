@@ -15,7 +15,6 @@ E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
 E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\ComponentFactory.Krypton.Workspace.dll
 E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\System.Data.SQLite.dll
 E:\Files\isaApp\mvgisa\mvgisa\bin\Debug\System.Data.SQLite.pdb
-E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.csprojResolveAssemblyReference.cache
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.AddForm.resources
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.MainForm.resources
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.PresentationForm.resources

@@ -1,7 +1,11 @@
-make a hard coded design for panels of respective addition of:		Add height to Indicator panel
+make a hard coded design for panels of respective addition of:		
+
 Size 366	Indicator includes criteria, element and source of evidence	
-Size 266	Criteria includes element and source of evidence		
-Size 172	Element includes source of evidence				
-Size 88	Source of Evidence					
+
+Size 266	Criteria includes element and source of evidence		add height to indicator
+							 	
+Size 172	Element includes source of evidence				add height to criteria
+
+Size 88	Source of Evidence					add height to element
 
 
