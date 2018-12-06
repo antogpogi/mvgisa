@@ -79,6 +79,7 @@
     <Compile Include="AddForm.Designer.cs">
       <DependentUpon>AddForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="extensions\controls.cs" />
     <Compile Include="ItemsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +91,30 @@
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\panelCritiria.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\panelCritiria.Designer.cs">
+      <DependentUpon>panelCritiria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\panelElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\panelElement.Designer.cs">
+      <DependentUpon>panelElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\panelFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\panelFlow.Designer.cs">
+      <DependentUpon>panelFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\panelIndicator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\panelIndicator.Designer.cs">
+      <DependentUpon>panelIndicator.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationForm.cs">
       <SubType>Form</SubType>
@@ -107,6 +132,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\panelCritiria.resx">
+      <DependentUpon>panelCritiria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\panelElement.resx">
+      <DependentUpon>panelElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\panelFlow.resx">
+      <DependentUpon>panelFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\panelIndicator.resx">
+      <DependentUpon>panelIndicator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationForm.resx">
       <DependentUpon>PresentationForm.cs</DependentUpon>

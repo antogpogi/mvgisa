@@ -19,3 +19,8 @@ E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.AddForm.resources
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.MainForm.resources
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.PresentationForm.resources
 E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.ItemsForm.resources
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.csprojResolveAssemblyReference.cache
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.panelCritiria.resources
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.panelElement.resources
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.panelFlow.resources
+E:\Files\isaApp\mvgisa\mvgisa\obj\Debug\mvgisa.panelIndicator.resources

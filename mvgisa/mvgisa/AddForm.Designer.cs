@@ -41,13 +41,8 @@
             this.panelCrit = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.panelElement = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.panelSourceOfEvid = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.panelElementHead = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -61,7 +56,27 @@
             this.kryptonTextBox5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel8 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.btnAddCrti = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-           
+            ((System.ComponentModel.ISupportInitialize)(this.KRAPanel)).BeginInit();
+            this.KRAPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ActionsPanel1)).BeginInit();
+            this.ActionsPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FormPanel)).BeginInit();
+            this.FormPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelIndictor)).BeginInit();
+            this.panelIndictor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelCrit)).BeginInit();
+            this.panelCrit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelElement)).BeginInit();
+            this.panelElement.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelSourceOfEvid)).BeginInit();
+            this.panelSourceOfEvid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelElementHead)).BeginInit();
+            this.panelElementHead.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelCritHead)).BeginInit();
+            this.panelCritHead.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelIndicatorHead)).BeginInit();
+            this.panelIndicatorHead.SuspendLayout();
+            this.SuspendLayout();
             // 
             // lblKRA
             // 
@@ -110,6 +125,7 @@
             this.btnIndi.Size = new System.Drawing.Size(142, 29);
             this.btnIndi.TabIndex = 3;
             this.btnIndi.Values.Text = "Add Indicator";
+            this.btnIndi.Click += new System.EventHandler(this.btnIndi_Click);
             // 
             // btnCoreIndi
             // 
@@ -170,7 +186,9 @@
             this.panelIndictor.Location = new System.Drawing.Point(0, 0);
             this.panelIndictor.Name = "panelIndictor";
             this.panelIndictor.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.panelIndictor.Size = new System.Drawing.Size(654, 366);
+            this.panelIndictor.Size = new System.Drawing.Size(654, 371);
+            this.panelIndictor.StateNormal.Color1 = System.Drawing.Color.ForestGreen;
+            this.panelIndictor.StateNormal.Color2 = System.Drawing.Color.DarkGreen;
             this.panelIndictor.TabIndex = 5;
             // 
             // panelCrit
@@ -180,7 +198,9 @@
             this.panelCrit.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCrit.Location = new System.Drawing.Point(0, 100);
             this.panelCrit.Name = "panelCrit";
-            this.panelCrit.Size = new System.Drawing.Size(654, 266);
+            this.panelCrit.Size = new System.Drawing.Size(654, 271);
+            this.panelCrit.StateNormal.Color1 = System.Drawing.Color.ForestGreen;
+            this.panelCrit.StateNormal.Color2 = System.Drawing.Color.DarkGreen;
             this.panelCrit.TabIndex = 21;
             // 
             // panelElement
@@ -196,13 +216,8 @@
             // 
             // panelSourceOfEvid
             // 
-            this.panelSourceOfEvid.Controls.Add(this.kryptonButton1);
-            this.panelSourceOfEvid.Controls.Add(this.kryptonLabel1);
-            this.panelSourceOfEvid.Controls.Add(this.kryptonLabel2);
             this.panelSourceOfEvid.Controls.Add(this.kryptonTextBox1);
-            this.panelSourceOfEvid.Controls.Add(this.kryptonLabel3);
-            this.panelSourceOfEvid.Controls.Add(this.kryptonTextBox2);
-            this.panelSourceOfEvid.Controls.Add(this.kryptonLabel4);
+            this.panelSourceOfEvid.Controls.Add(this.kryptonButton1);
             this.panelSourceOfEvid.Controls.Add(this.kryptonLabel5);
             this.panelSourceOfEvid.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSourceOfEvid.Location = new System.Drawing.Point(0, 84);
@@ -211,76 +226,31 @@
             this.panelSourceOfEvid.StateNormal.Color1 = System.Drawing.Color.WhiteSmoke;
             this.panelSourceOfEvid.TabIndex = 25;
             // 
+            // kryptonTextBox1
+            // 
+            this.kryptonTextBox1.Location = new System.Drawing.Point(224, 26);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.Size = new System.Drawing.Size(258, 27);
+            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox1.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox1.TabIndex = 21;
+            // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(420, 9);
+            this.kryptonButton1.Location = new System.Drawing.Point(505, 21);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(116, 35);
             this.kryptonButton1.TabIndex = 14;
             this.kryptonButton1.Values.Text = "Open";
             // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(149, 50);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(62, 24);
-            this.kryptonLabel1.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel1.TabIndex = 23;
-            this.kryptonLabel1.Values.Text = "Pages";
-            // 
-            // kryptonLabel2
-            // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(223, 50);
-            this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(53, 24);
-            this.kryptonLabel2.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel2.TabIndex = 16;
-            this.kryptonLabel2.Values.Text = "From";
-            // 
-            // kryptonTextBox1
-            // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(451, 51);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(116, 27);
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.TabIndex = 22;
-            // 
-            // kryptonLabel3
-            // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(412, 50);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(33, 24);
-            this.kryptonLabel3.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel3.TabIndex = 18;
-            this.kryptonLabel3.Values.Text = "To";
-            // 
-            // kryptonTextBox2
-            // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(282, 51);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(116, 27);
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.TabIndex = 21;
-            // 
-            // kryptonLabel4
-            // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(223, 16);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(191, 28);
-            this.kryptonLabel4.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel4.TabIndex = 13;
-            this.kryptonLabel4.Values.Text = "Document filename";
-            // 
             // kryptonLabel5
             // 
             this.kryptonLabel5.Location = new System.Drawing.Point(26, 16);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(191, 28);
+            this.kryptonLabel5.Size = new System.Drawing.Size(113, 28);
             this.kryptonLabel5.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel5.TabIndex = 10;
-            this.kryptonLabel5.Values.Text = "Source of Evidence";
+            this.kryptonLabel5.Values.Text = "Flow Chart";
             // 
             // panelElementHead
             // 
@@ -316,9 +286,9 @@
             // 
             this.AddSOE.Location = new System.Drawing.Point(33, 46);
             this.AddSOE.Name = "AddSOE";
-            this.AddSOE.Size = new System.Drawing.Size(226, 29);
+            this.AddSOE.Size = new System.Drawing.Size(147, 29);
             this.AddSOE.TabIndex = 12;
-            this.AddSOE.Values.Text = "Add Source of Evidence";
+            this.AddSOE.Values.Text = "Add Flow Chart";
             this.AddSOE.Click += new System.EventHandler(this.AddSOE_Click);
             // 
             // panelCritHead
@@ -376,7 +346,7 @@
             // 
             // kryptonTextBox5
             // 
-            this.kryptonTextBox5.Location = new System.Drawing.Point(227, 22);
+            this.kryptonTextBox5.Location = new System.Drawing.Point(224, 21);
             this.kryptonTextBox5.Name = "kryptonTextBox5";
             this.kryptonTextBox5.Size = new System.Drawing.Size(380, 27);
             this.kryptonTextBox5.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -461,12 +431,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel panelElement;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel panelSourceOfEvid;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel panelElementHead;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
@@ -480,5 +444,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel8;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAddCrti;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
     }
 }
