@@ -1,4 +1,5 @@
-﻿namespace mvgisa
+﻿using mvgisa.extensions;
+namespace mvgisa
 {
     partial class panelElement
     {
@@ -37,6 +38,8 @@
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.lblFilename = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.panelElementHead)).BeginInit();
             this.panelElementHead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelSourceOfEvid)).BeginInit();
@@ -79,7 +82,7 @@
             // 
             this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox3.Location = new System.Drawing.Point(272, 12);
-            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Name = "txtElement" + controls.underNode;
             this.richTextBox3.Size = new System.Drawing.Size(295, 27);
             this.richTextBox3.TabIndex = 14;
             this.richTextBox3.Text = "";
@@ -97,7 +100,7 @@
             // AddSOE
             // 
             this.AddSOE.Location = new System.Drawing.Point(73, 45);
-            this.AddSOE.Name = "AddSOE";
+            this.AddSOE.Name = "AddSOE" + controls.underNode + "_" + 1;
             this.AddSOE.Size = new System.Drawing.Size(182, 29);
             this.AddSOE.TabIndex = 12;
             this.AddSOE.Values.Text = "Add Possible Outcome";
@@ -105,7 +108,9 @@
             // 
             // panelSourceOfEvid
             // 
+            this.panelSourceOfEvid.Controls.Add(this.kryptonButton3);
             this.panelSourceOfEvid.Controls.Add(this.richTextBox4);
+            this.panelSourceOfEvid.Controls.Add(this.lblFilename);
             this.panelSourceOfEvid.Controls.Add(this.kryptonButton1);
             this.panelSourceOfEvid.Controls.Add(this.kryptonLabel5);
             this.panelSourceOfEvid.Dock = System.Windows.Forms.DockStyle.Top;
@@ -119,7 +124,7 @@
             // 
             this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox4.Location = new System.Drawing.Point(323, 18);
-            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.Name = "txtFlowChart" + controls.underNode + "_" + 1;
             this.richTextBox4.Size = new System.Drawing.Size(244, 27);
             this.richTextBox4.TabIndex = 16;
             this.richTextBox4.Text = "";
@@ -128,7 +133,7 @@
             // kryptonButton1
             // 
             this.kryptonButton1.Location = new System.Drawing.Point(157, 51);
-            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Name = "btnFlowChart" + controls.underNode + "_" + 1;
             this.kryptonButton1.Size = new System.Drawing.Size(107, 28);
             this.kryptonButton1.TabIndex = 14;
             this.kryptonButton1.Values.Text = "Links";
@@ -142,6 +147,25 @@
             this.kryptonLabel5.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel5.TabIndex = 10;
             this.kryptonLabel5.Values.Text = "Possible Outcome";
+            // 
+            // kryptonButton3
+            // 
+            this.kryptonButton3.Location = new System.Drawing.Point(467, 51);
+            this.kryptonButton3.Name = "kryptonButton3";
+            this.kryptonButton3.Size = new System.Drawing.Size(100, 28);
+            this.kryptonButton3.TabIndex = 28;
+            this.kryptonButton3.Values.Text = "Upload";
+            this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
+            // 
+            // lblFilename
+            // 
+            this.lblFilename.AutoEllipsis = true;
+            this.lblFilename.BackColor = System.Drawing.Color.Transparent;
+            this.lblFilename.Location = new System.Drawing.Point(320, 51);
+            this.lblFilename.Name = "lblFilename" + controls.underNode + "_" + 1;
+            this.lblFilename.Size = new System.Drawing.Size(141, 23);
+            this.lblFilename.TabIndex = 27;
+            this.lblFilename.Text = "Picture";
             // 
             // panelElement
             // 
@@ -171,6 +195,8 @@
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.RichTextBox richTextBox4;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
+        private System.Windows.Forms.Label lblFilename;
 
 
 

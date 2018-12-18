@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using mvgisa.extensions;
 
 namespace mvgisa
 {
@@ -53,6 +54,11 @@ namespace mvgisa
             grandParentControl.Parent.Height = grandParentControl.Parent.Height - 190;
             nxtControl.Parent.Height = nxtControl.Parent.Height - 190;
             this.Dispose();
+        }
+
+        private void kryptonButton3_Click(object sender, EventArgs e)
+        {
+            controls.uploadPicture(lblFilename);
         }
     }
 }
