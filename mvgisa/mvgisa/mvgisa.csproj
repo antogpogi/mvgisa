@@ -56,6 +56,11 @@
     <Reference Include="ComponentFactory.Krypton.Workspace">
       <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86" />
@@ -79,12 +84,20 @@
     <Compile Include="AddForm.Designer.cs">
       <DependentUpon>AddForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="extensions\controls.cs" />
-    <Compile Include="ItemsForm.cs">
+    <Compile Include="DocumentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ItemsForm.Designer.cs">
-      <DependentUpon>ItemsForm.cs</DependentUpon>
+    <Compile Include="DocumentsForm.Designer.cs">
+      <DependentUpon>DocumentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="extensions\controls.cs" />
+    <Compile Include="extensions\FlowChartItems.cs" />
+    <Compile Include="extensions\SQLiteDatabaseCommand.cs" />
+    <Compile Include="FlowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlowForm.Designer.cs">
+      <DependentUpon>FlowForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -116,6 +129,18 @@
     <Compile Include="components\panelIndicator.Designer.cs">
       <DependentUpon>panelIndicator.cs</DependentUpon>
     </Compile>
+    <Compile Include="PDFViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDFViewer.Designer.cs">
+      <DependentUpon>PDFViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation2Form.Designer.cs">
+      <DependentUpon>Presentation2Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,11 +149,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Accordion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\OpacityEx.cs" />
+    <Compile Include="src\ResizeBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <EmbeddedResource Include="AddForm.resx">
       <DependentUpon>AddForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ItemsForm.resx">
-      <DependentUpon>ItemsForm.cs</DependentUpon>
+    <EmbeddedResource Include="DocumentsForm.resx">
+      <DependentUpon>DocumentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlowForm.resx">
+      <DependentUpon>FlowForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -144,6 +179,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="components\panelIndicator.resx">
       <DependentUpon>panelIndicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDFViewer.resx">
+      <DependentUpon>PDFViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation2Form.resx">
+      <DependentUpon>Presentation2Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationForm.resx">
       <DependentUpon>PresentationForm.cs</DependentUpon>
@@ -170,6 +211,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

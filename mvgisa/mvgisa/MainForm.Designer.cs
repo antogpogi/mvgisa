@@ -64,15 +64,17 @@
             // 
             this.addToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(121, 32);
-            this.addToolStripMenuItem.Text = "Add";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.addToolStripMenuItem.Text = "Key Result Area";
+            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // listToolStripMenuItem
             // 
             this.listToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listToolStripMenuItem.Name = "listToolStripMenuItem";
-            this.listToolStripMenuItem.Size = new System.Drawing.Size(121, 32);
-            this.listToolStripMenuItem.Text = "List";
+            this.listToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.listToolStripMenuItem.Text = "Document Source";
+            this.listToolStripMenuItem.Click += new System.EventHandler(this.listToolStripMenuItem_Click);
             // 
             // presentationToolStripMenuItem
             // 
@@ -80,6 +82,7 @@
             this.presentationToolStripMenuItem.Name = "presentationToolStripMenuItem";
             this.presentationToolStripMenuItem.Size = new System.Drawing.Size(133, 32);
             this.presentationToolStripMenuItem.Text = "Presentation";
+            this.presentationToolStripMenuItem.Click += new System.EventHandler(this.presentationToolStripMenuItem_Click);
             // 
             // listsToolStripMenuItem
             // 
@@ -90,9 +93,8 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1348, 1037);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.IsMdiContainer = true;
@@ -100,7 +102,6 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ISA Presentation";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

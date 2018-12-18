@@ -28,151 +28,176 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonDropButton3 = new ComponentFactory.Krypton.Toolkit.KryptonDropButton();
-            this.kryptonDropButton2 = new ComponentFactory.Krypton.Toolkit.KryptonDropButton();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonDropButton1 = new ComponentFactory.Krypton.Toolkit.KryptonDropButton();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonContextMenuItems1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
-            this.kryptonPanel1.SuspendLayout();
+            this.flowLayoutPanelKRA = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblKRANme = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.accIndicator = new Opulos.Core.UI.Accordion();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // kryptonPanel1
+            // flowLayoutPanelKRA
             // 
-            this.kryptonPanel1.Controls.Add(this.kryptonDropButton3);
-            this.kryptonPanel1.Controls.Add(this.kryptonDropButton2);
-            this.kryptonPanel1.Controls.Add(this.kryptonButton1);
-            this.kryptonPanel1.Controls.Add(this.kryptonLabel3);
-            this.kryptonPanel1.Controls.Add(this.kryptonDropButton1);
-            this.kryptonPanel1.Controls.Add(this.kryptonLabel2);
-            this.kryptonPanel1.Controls.Add(this.kryptonLabel1);
-            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
-            this.kryptonPanel1.Size = new System.Drawing.Size(1348, 299);
-            this.kryptonPanel1.TabIndex = 0;
+            this.flowLayoutPanelKRA.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.flowLayoutPanelKRA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanelKRA.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanelKRA.Location = new System.Drawing.Point(39, 71);
+            this.flowLayoutPanelKRA.Name = "flowLayoutPanelKRA";
+            this.flowLayoutPanelKRA.Size = new System.Drawing.Size(284, 457);
+            this.flowLayoutPanelKRA.TabIndex = 0;
             // 
-            // kryptonDropButton3
+            // panel1
             // 
-            this.kryptonDropButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.kryptonDropButton3.Location = new System.Drawing.Point(588, 151);
-            this.kryptonDropButton3.Name = "kryptonDropButton3";
-            this.kryptonDropButton3.Size = new System.Drawing.Size(487, 44);
-            this.kryptonDropButton3.TabIndex = 9;
-            this.kryptonDropButton3.Values.Text = "kryptonDropButton3";
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.flowLayoutPanelKRA);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(364, 609);
+            this.panel1.TabIndex = 1;
             // 
-            // kryptonDropButton2
+            // lblKRANme
             // 
-            this.kryptonDropButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.kryptonDropButton2.Location = new System.Drawing.Point(588, 101);
-            this.kryptonDropButton2.Name = "kryptonDropButton2";
-            this.kryptonDropButton2.Size = new System.Drawing.Size(487, 44);
-            this.kryptonDropButton2.TabIndex = 8;
-            this.kryptonDropButton2.Values.Text = "kryptonDropButton2";
+            this.lblKRANme.AutoSize = true;
+            this.lblKRANme.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKRANme.Location = new System.Drawing.Point(24, 21);
+            this.lblKRANme.Name = "lblKRANme";
+            this.lblKRANme.Size = new System.Drawing.Size(0, 28);
+            this.lblKRANme.TabIndex = 1;
             // 
-            // kryptonButton1
+            // panel3
             // 
-            this.kryptonButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonButton1.Location = new System.Drawing.Point(0, 244);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(1348, 55);
-            this.kryptonButton1.StateNormal.Back.Color1 = System.Drawing.Color.ForestGreen;
-            this.kryptonButton1.StateNormal.Back.Color2 = System.Drawing.Color.ForestGreen;
-            this.kryptonButton1.StateNormal.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton1.StateNormal.Border.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.Green;
-            this.kryptonButton1.TabIndex = 7;
-            this.kryptonButton1.Values.Text = "Search";
-            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            this.panel3.Controls.Add(this.accIndicator);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(364, 103);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(740, 506);
+            this.panel3.TabIndex = 2;
             // 
-            // kryptonLabel3
+            // panel2
             // 
-            this.kryptonLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.kryptonLabel3.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.TitleControl;
-            this.kryptonLabel3.Location = new System.Drawing.Point(414, 162);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(104, 35);
-            this.kryptonLabel3.TabIndex = 5;
-            this.kryptonLabel3.Values.Text = "Critirion";
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.lblKRANme);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(364, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(740, 103);
+            this.panel2.TabIndex = 2;
             // 
-            // kryptonDropButton1
+            // label1
             // 
-            this.kryptonDropButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.kryptonDropButton1.Location = new System.Drawing.Point(588, 51);
-            this.kryptonDropButton1.Name = "kryptonDropButton1";
-            this.kryptonDropButton1.Size = new System.Drawing.Size(487, 44);
-            this.kryptonDropButton1.TabIndex = 3;
-            this.kryptonDropButton1.Values.Text = "kryptonDropButton1";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 23);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Key Result Area List";
             // 
-            // kryptonLabel2
+            // accIndicator
             // 
-            this.kryptonLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.kryptonLabel2.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.TitleControl;
-            this.kryptonLabel2.Location = new System.Drawing.Point(242, 110);
-            this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(284, 35);
-            this.kryptonLabel2.TabIndex = 2;
-            this.kryptonLabel2.Values.Text = "Core Indicator/ Indicator";
-            // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.kryptonLabel1.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.TitleControl;
-            this.kryptonLabel1.Location = new System.Drawing.Point(323, 60);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(195, 35);
-            this.kryptonLabel1.TabIndex = 0;
-            this.kryptonLabel1.Values.Text = "Key Result Areas";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(81, 340);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1183, 666);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.accIndicator.AccessibleDescription = "1";
+            this.accIndicator.AddResizeBars = false;
+            this.accIndicator.AllowMouseResize = true;
+            this.accIndicator.AnimateCloseEffect = ((Opulos.Core.UI.AnimateWindowFlags)(((Opulos.Core.UI.AnimateWindowFlags.VerticalNegative | Opulos.Core.UI.AnimateWindowFlags.Hide) 
+            | Opulos.Core.UI.AnimateWindowFlags.Slide)));
+            this.accIndicator.AnimateCloseMillis = 300;
+            this.accIndicator.AnimateOpenEffect = ((Opulos.Core.UI.AnimateWindowFlags)(((Opulos.Core.UI.AnimateWindowFlags.VerticalPositive | Opulos.Core.UI.AnimateWindowFlags.Show) 
+            | Opulos.Core.UI.AnimateWindowFlags.Slide)));
+            this.accIndicator.AnimateOpenMillis = 300;
+            this.accIndicator.AutoFixDockStyle = true;
+            this.accIndicator.AutoScroll = true;
+            this.accIndicator.AutoSize = true;
+            this.accIndicator.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.accIndicator.BackColor = System.Drawing.Color.White;
+            this.accIndicator.CheckBoxFactory = null;
+            this.accIndicator.CheckBoxMargin = new System.Windows.Forms.Padding(0);
+            this.accIndicator.ContentBackColor = null;
+            this.accIndicator.ContentMargin = null;
+            this.accIndicator.ContentPadding = new System.Windows.Forms.Padding(5);
+            this.accIndicator.ControlBackColor = null;
+            this.accIndicator.ControlMinimumHeightIsItsPreferredHeight = true;
+            this.accIndicator.ControlMinimumWidthIsItsPreferredWidth = true;
+            this.accIndicator.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accIndicator.DownArrow = null;
+            this.accIndicator.FillHeight = false;
+            this.accIndicator.FillLastOpened = false;
+            this.accIndicator.FillModeGrowOnly = false;
+            this.accIndicator.FillResetOnCollapse = false;
+            this.accIndicator.FillWidth = true;
+            this.accIndicator.GrabCursor = System.Windows.Forms.Cursors.SizeNS;
+            this.accIndicator.GrabRequiresPositiveFillWeight = true;
+            this.accIndicator.GrabWidth = 6;
+            this.accIndicator.GrowAndShrink = false;
+            this.accIndicator.Insets = new System.Windows.Forms.Padding(0);
+            this.accIndicator.Location = new System.Drawing.Point(0, 0);
+            this.accIndicator.Name = "accIndicator";
+            this.accIndicator.OpenOnAdd = false;
+            this.accIndicator.OpenOneOnly = true;
+            this.accIndicator.ResizeBarFactory = null;
+            this.accIndicator.ResizeBarsAlign = 0.5D;
+            this.accIndicator.ResizeBarsArrowKeyDelta = 10;
+            this.accIndicator.ResizeBarsFadeInMillis = 800;
+            this.accIndicator.ResizeBarsFadeOutMillis = 800;
+            this.accIndicator.ResizeBarsFadeProximity = 30;
+            this.accIndicator.ResizeBarsFill = 1D;
+            this.accIndicator.ResizeBarsKeepFocusAfterMouseDrag = false;
+            this.accIndicator.ResizeBarsKeepFocusIfControlOutOfView = true;
+            this.accIndicator.ResizeBarsKeepFocusOnClick = true;
+            this.accIndicator.ResizeBarsMargin = null;
+            this.accIndicator.ResizeBarsMinimumLength = 50;
+            this.accIndicator.ResizeBarsStayInViewOnArrowKey = true;
+            this.accIndicator.ResizeBarsStayInViewOnMouseDrag = true;
+            this.accIndicator.ResizeBarsStayVisibleIfFocused = true;
+            this.accIndicator.ResizeBarsTabStop = true;
+            this.accIndicator.ShowPartiallyVisibleResizeBars = false;
+            this.accIndicator.ShowToolMenu = true;
+            this.accIndicator.ShowToolMenuOnHoverWhenClosed = false;
+            this.accIndicator.ShowToolMenuOnRightClick = true;
+            this.accIndicator.ShowToolMenuRequiresPositiveFillWeight = false;
+            this.accIndicator.Size = new System.Drawing.Size(740, 506);
+            this.accIndicator.TabIndex = 0;
+            this.accIndicator.UpArrow = null;
             // 
             // PresentationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1348, 1037);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.kryptonPanel1);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1104, 609);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "PresentationForm";
-            this.Text = "PresentationForm";
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
-            this.kryptonPanel1.ResumeLayout(false);
-            this.kryptonPanel1.PerformLayout();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Presentation";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.PresentationForm_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
-        private ComponentFactory.Krypton.Toolkit.KryptonDropButton kryptonDropButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDropButton kryptonDropButton3;
-        private ComponentFactory.Krypton.Toolkit.KryptonDropButton kryptonDropButton2;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems kryptonContextMenuItems1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelKRA;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblKRANme;
+        private System.Windows.Forms.Panel panel3;
+        private Opulos.Core.UI.Accordion accIndicator;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
 
     }
 }
